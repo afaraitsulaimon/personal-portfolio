@@ -36,7 +36,7 @@ useEffect(() => {
 
 
   return (
-  
+
     <Header>
 
             <MenuLogo>
@@ -60,7 +60,7 @@ useEffect(() => {
                     </ul>
 
                 <div>
-                    <Button variant="contained">Get in Touch</Button>
+                    <Button variant="contained" style={{ backgroundColor:'blue'  }}>Get in Touch</Button>
                 </div>  
 
             </div>
@@ -80,7 +80,7 @@ const Header = styled.div`
     display:flex;
     justify-content:space-between;
     align-items:center;
-    background-color:green;
+    background-color:#1976d2;
     font-family:Montserrat, san-serif;
     max-height:10vh;
 
