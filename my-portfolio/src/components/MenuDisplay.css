@@ -34,7 +34,7 @@
     }
     
     .showLinksForSmallScreen{
-        background-color:rgba(242, 37, 4, 0.5);
+        background-color:rgb(101, 132, 223);
         position: absolute;
         display: flex;
         flex-direction: column;
@@ -42,6 +42,7 @@
         max-height: 80vh;
         justify-content: center;
         padding: 8em;
+        z-index: 1;
        
 
     }

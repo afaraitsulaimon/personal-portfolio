@@ -83,14 +83,18 @@ const Header = styled.div`
     background-color:#1976d2;
     font-family:Montserrat, san-serif;
     max-height:10vh;
-
     
 `;
 
 const MenuLogo = styled.div`
+margin-left:2em;
     a{
         color:white;
         text-decoration:none;
+    }
+
+    @media(max-width:768px){
+        margin-left:3.5em;
     }
 `;
 
