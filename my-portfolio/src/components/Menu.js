@@ -47,11 +47,11 @@ useEffect(() => {
 
                     <ul className='nav-links'>
                         <li>
-                            <Link to='about-me'>About</Link>
+                            <Link to='/about-me'>About</Link>
                         </li>
 
                         <li>
-                            <Link to='portfolio'>Portfolio</Link>
+                            <Link to='/portfolio'>Portfolio</Link>
                         </li>
 
                         <li>

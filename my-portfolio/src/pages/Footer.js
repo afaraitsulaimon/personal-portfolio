@@ -5,15 +5,15 @@ import styled from 'styled-components'
 
 
 
-const Footer = ({colorBg, topMargin}) => {
+const Footer = ({colorBg, topMargin, colorText}) => {
     let currentDate = new Date();
     let year = currentDate.getFullYear();
 
 
   return (
-    <FooterDisplay bg={colorBg} mgTop={topMargin}>
+    <FooterDisplay bg={colorBg} mgTop={topMargin} textOfColor={colorText}>
           
-                <p>Designed By Afarait Sulaimon Bola &copy; {year}</p>
+                <p >Designed By Afarait Sulaimon Bola &copy; {year}</p>
                
     </FooterDisplay>
   )
@@ -29,6 +29,12 @@ const FooterDisplay = styled.div`
         font-size:1.3em;
         font-weight:bold;
         margin-top:${(props) => props.mgTop};
+        border-top:1px solid white;
+
+        p{
+
+          color: ${(props)=> props.textOfColor};
+        }
 
       
 
