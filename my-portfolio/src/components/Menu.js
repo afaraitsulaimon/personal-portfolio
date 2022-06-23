@@ -55,7 +55,7 @@ useEffect(() => {
                         </li>
 
                         <li>
-                            <Link to='/'>Resume</Link>
+                            <Link to='/resume'>Resume</Link>
                         </li>
                     </ul>
 
