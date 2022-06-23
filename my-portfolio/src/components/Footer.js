@@ -36,7 +36,10 @@ const FooterDisplay = styled.div`
           color: ${(props)=> props.textOfColor};
         }
 
+        @media(max-width:475px){
+          text-align:center;
       
+        }
 
 `;
 

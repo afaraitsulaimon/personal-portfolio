@@ -1,7 +1,7 @@
 import React from 'react'
 import Menu from '../components/Menu'
 import styled from 'styled-components';
-import Footer from './Footer';
+import Footer from '../components/Footer'
 import {motion} from 'framer-motion'
 import {FaGithub,FaHtml5, FaJs, FaCss3, FaFigma, FaReact, FaPhp, FaBootstrap, FaJira, FaNodeJs} from "react-icons/fa";
 import { SiMiro, SiStyledcomponents, SiTailwindcss, SiMaterialui, SiProducthunt} from "react-icons/si";
