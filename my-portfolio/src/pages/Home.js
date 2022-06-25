@@ -76,6 +76,7 @@ const LeftTopContent = styled.div`
       padding-left:3em;
       color:white;
      position:relative;
+     font-family: 'Quicksand', sans-serif;
 
 
      @media(max-width:768px){
