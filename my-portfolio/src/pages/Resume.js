@@ -4,6 +4,9 @@ import styled from 'styled-components'
 import Menu from '../components/Menu'
 import Footer from '../components/Footer'
 import {FaLinkedin, FaDownload} from 'react-icons/fa'
+import ButtonCv from '../components/ButtonCv'
+import pdf from "../file/afaraitcv.pdf";
+
 
 
 const Resume = () => {
@@ -21,7 +24,7 @@ const Resume = () => {
                     <InnerResumeMenu>
                         <ul>
                             <li><FaLinkedin style={{ color:'#1976d2', cursor:'pointer'}}/></li>
-                            <li><FaDownload  style={{ color:'#1976d2',  cursor:'pointer'}} /> <span>Download</span></li>
+                            <li style={{ width:'100%',display:'flex', width:'100px',  justifyContent:'space-around', alignItems:'center'}}><FaDownload  style={{ color:'#1976d2',  cursor:'pointer'}} /><ButtonCv label="Download" openMyCv={pdf} /></li>
                         </ul>
                     </InnerResumeMenu>
 
@@ -32,10 +35,9 @@ const Resume = () => {
                             
                    
                                 <DataHolder>
-                                    <li ><span style={{ color:'#1976d2' }}>Afarait Sulaimon B.</span></li>
                                     <li>Lagos, Nigeria</li>
                                     <li>afaraitsulaimon@gmail.com </li>
-                                    <li style={{ color:'#1976d2' }}>github.com/afaraitsulaimon</li>
+                                    <li style={{ color:'gray' }}>github.com/afaraitsulaimon</li>
 
                                 </DataHolder>
 
@@ -83,172 +85,174 @@ const Resume = () => {
                         </ResumeLeftDiv>
 
                         <ResumeRightDiv>
-                                <div>
-                                <h2>Frontend developer and Software.</h2>
-                                
-                                <p>
-                                    Love to build scalable and minimum viable products. Also love creating
-                                    high performance web experience for users and a better user experience
-                                    products.
+                        <h1  style={{ color:'#1976d2', paddingLeft:'2rem', fontSize:'2.5rem',fontFamily: "'Kdam Thmor Pro', sans-serif" }}>Afarait<br/> Sulaimon B.</h1>
+
+                                <Profession>
+                                        <h2>Software developer and Product Manager.</h2>
+                                        
+                                        <p>
+                                            Love to build scalable and minimum viable products. Also love creating
+                                            high performance web experience for users and a better user experience
+                                            products.
+                                    
+                                        
+                                        </p>
+                                </Profession>
                                
-                                   
-                                 </p>
-                                </div>
-                               
-                                <div>
-                                <h2 style={{ textDecoration:'underline' }}>Objective</h2>
+                                <Objective>
+                                <h2>Objective</h2>
                                      <p>
                                      To secure a responsible career opportunity and fully utilize my training 
                                     and skills, while making a significant contribution to the success of the company.
 
                                      </p>
-                                </div>
+                                </Objective>
 
                                     <JobExpHolder>
                                     <h2>Job Experience</h2>
 
-                                       <div>
+                                       <JobDetailsHolder>
                                             <ul >
-                                            <li>Support Staff @ Peoples plus Management</li> 
+                                            <li className='jobTitle'>Support Staff @ Peoples plus Management</li> 
                                             <li>August 2017 – March 2021</li>
                                             </ul>
                                            
-                                           <div>
+                                           <JobDescriptionHolder>
                                                <ul>
-                                               <li>⚫ Keying in of shipping document on NCS 
+                                               <li> <div></div>Keying in of shipping document on NCS 
                                                    (Nigeria Custom Service) Portal to generate PAAR 
                                                     (Pre-Arrival Assessment Report) for customers.
                                                 </li>
 
-                                                <li>⚫ Keying in of shipping documents / Exchange Control 
+                                                <li> Keying in of shipping documents / Exchange Control 
                                                     Documents (ECD) into the bank system. 
                                                 </li>
 
                                                </ul>
-                                           </div>
-                                       </div>
+                                           </JobDescriptionHolder>
+                                       </JobDetailsHolder>
 
 
 
 
 
-                                       <div>
+                                       <JobDetailsHolder>
                                             <ul >
-                                            <li>Note Counter (Cash & Teller Dept.)  @ Peoples plus Management</li> 
+                                            <li className='jobTitle'>Note Counter (Cash & Teller Dept.)  @ Peoples plus Management</li> 
                                             <li>August 2017 – March 2021</li>
                                             </ul>
                                            
-                                           <div>
+                                           <JobDescriptionHolder>
                                                <ul>
-                                               <li>⚫  Counting / Confirming of Bulk cash brought into and 
+                                               <li>  Counting / Confirming of Bulk cash brought into and 
                                                    taking out of the bank by the customer
                                                 </li>
                                                 
                                                 <li>
-                                                    ⚫ Detecting of the fake note in the cash.
+                                                     Detecting of the fake note in the cash.
                                                 </li>
 
                                                 <li>
-                                                    ⚫ Sorting of good note for the ATM.
+                                                     Sorting of good note for the ATM.
                                                 </li>
 
                                                </ul>
-                                           </div>
-                                       </div>
+                                           </JobDescriptionHolder>
+                                       </JobDetailsHolder>
 
 
 
-                                       <div>
+                                       <JobDetailsHolder>
                                             <ul >
-                                            <li>Online Sales Consultant (J-Force Team) @ Jumia.com.ng</li> 
+                                            <li className='jobTitle'>Online Sales Consultant (J-Force Team) @ Jumia.com.ng</li> 
                                             <li>Feb. 2014 – August 2014</li>
                                             </ul>
                                            
-                                           <div>
+                                           <JobDescriptionHolder>
                                                <ul>
-                                               <li>⚫  To help customers that are willing to order online 
+                                               <li>  To help customers that are willing to order online 
                                                    to order there items.
                                                 </li>
                                                 
                                                 <li>
-                                                    ⚫ To advertise the services of Jumia more 
+                                                     To advertise the services of Jumia more 
                                                     both online and one on one to people.
                                                 </li>
 
 
 
                                                </ul>
-                                           </div>
-                                       </div>
+                                           </JobDescriptionHolder>
+                                       </JobDetailsHolder>
 
 
 
 
 
-                                       <div>
+                                       <JobDetailsHolder>
                                             <ul >
-                                            <li>Uploader @ Taafoo.com,</li> 
+                                            <li className='jobTitle'>Uploader @ Taafoo.com,</li> 
                                             <li>Nov 2012 – Jan 2013</li>
                                             </ul>
                                            
-                                           <div>
+                                           <JobDescriptionHolder>
                                                <ul>
-                                               <li>⚫   To name and separate the unique item.
+                                               <li> To name and separate the unique item.
                                                 </li>
                                                 
                                                 <li>
-                                                    ⚫ To Upload all the items on the website.
+                                                     To Upload all the items on the website.
                                                 </li>
 
 
-                                                <li>⚫   To scan the items in the store.
+                                                <li>   To scan the items in the store.
                                                 </li>
                                                 
                                                 <li>
-                                                    ⚫ To pick the items bought for shipment.
+                                                    <span></span>To pick the items bought for shipment.
                                                 </li>
 
 
 
                                                </ul>
-                                           </div>
-                                       </div>
+                                           </JobDescriptionHolder>
+                                       </JobDetailsHolder>
 
 
 
 
-                                       <div>
+                                       <JobDetailsHolder>
                                             <ul >
-                                            <li>NYSC (National Youth Service Corps)</li> 
+                                            <li className='jobTitle'>NYSC (National Youth Service Corps)</li> 
                                             <li>March 2010-Feb 2011</li>
                                             </ul>
                                            
-                                           <div>
+                                           <JobDescriptionHolder>
                                                <ul>
-                                               <li>⚫    Teaching Electronics
+                                               <li>  Teaching Electronics
 
                                                 </li>
                                                 
                                                 <li>
-                                                    ⚫ Prepare students well for NABTEB Exam.
+                                                     Prepare students well for NABTEB Exam.
                                                 </li>
 
 
 
                                                </ul>
-                                           </div>
-                                       </div>
+                                           </JobDescriptionHolder>
+                                       </JobDetailsHolder>
 
 
 
-                                       <div>
-                                <h2>TRAINING.</h2>
+                                       <TrainingHolder>
+                                <h2>Training</h2>
                                 
                                 <p>
                                 Online Training at Utiva.io (Product management) - April 2021                               
                                    
                                  </p>
-                                </div>
+                                </TrainingHolder>
 
                                     </JobExpHolder>
                                      
@@ -270,6 +274,8 @@ const ResumeHolder = styled.div`
     display:flex;
     justify-content:center;
     align-items:center;
+    margin-top:5rem;
+    margin-bottom:5rem;
 
 `;
 
@@ -286,12 +292,18 @@ const InnerResumeHolder = styled.div`
 const InnerResumeMenu = styled.div`
         width:100%;
         height:50px;
-        background-color:red;
       
 ul{
     float:right;
     display:flex;
  
+    @media(max-width:475px){
+        width:87%;
+        display:flex;
+        flex-direction:row;
+        justify-content:center;
+
+    }
     
 
     li{
@@ -313,22 +325,42 @@ const ResumeContentHolder = styled.div`
     width:100%;
     min-height:100%;
     display:flex;
+
+    @media(max-width:475px){
+
+        display:grid;
+
+
+    }
 `;
 
 const ResumeLeftDiv = styled.div`
         width:30%;
         min-height:100%;
 
+        @media(max-width:475px){
+            width:100%;
+
+            display:grid;
+            align-items:center;
+            text-align:center;
+    
+    
+        }
+
     
 `;
 
 const DataHolder = styled.div`
-
+                margin-top:2rem;
 
          
                 li{
                     list-style:none;
                     padding-left:2em;
+                    color:gray;
+                    font-size:0.8em;
+                    font-family: 'Quicksand', sans-serif;
                 }
 
                 li:first-child{
@@ -342,7 +374,10 @@ const DataHolder = styled.div`
                 li:last-child{
                     font-weight:bold;
 
+
                     }
+
+                    
          
 `;
 
@@ -352,14 +387,22 @@ const DataHolder = styled.div`
 const ToolsHolder = styled.ul`
 
         h4{
-            color:#0f64b9;
+            color:#1976d2;
             font-weight:bold;
             font-size:1.1em;
+            font-family: 'Quicksand', sans-serif;
+
 
         }
         
         li{
             list-style:none;
+            color:gray;
+            font-size:0.8em;
+            font-family: 'Quicksand', sans-serif;
+
+
+
         }
 `;
 
@@ -367,27 +410,37 @@ const ToolsHolder = styled.ul`
 const CoreTechHolder = styled.ul`
 
         h4{
-            color:#0f64b9;
+            color:#1976d2;
             font-weight:bold;
             font-size:1.1em;
+            font-family: 'Quicksand', sans-serif;
+        
 
         }
 
         li{
             list-style:none;
+            color:gray;
+            font-size:0.8em;
+            font-family: 'Quicksand', sans-serif;
         }
 `;
 
 const SkillsHolder = styled.ul`
 
         h4{
-            color:#0f64b9;
+            color:#1976d2;
             font-weight:bold;
             font-size:1.1em;
+            font-family: 'Quicksand', sans-serif;
+
 
         }
         li{
             list-style:none;
+            color:gray;
+            font-size:0.8em;
+            font-family: 'Quicksand', sans-serif;
         }
 `;
 
@@ -396,11 +449,125 @@ const SkillsHolder = styled.ul`
 const ResumeRightDiv = styled.div`
         width:70%;
         min-height:100%;
-        background-color:orange;
+
+        p{
+            font-size:0.9em;
+        }
+
+       
 `;
 
 const JobExpHolder = styled.div`
+        h2{
+            padding-left:2rem;
+            font-family: 'Quicksand', sans-serif;
+            color:#1976d2;
 
+        }
+`;
+
+
+const JobDetailsHolder = styled.div`
+
+        ul{
+            
+            .jobTitle{
+                font-weight:800;
+                
+
+            }  
+            li{
+                list-style:none;
+                font-size:0.8rem;
+                font-family: 'Quicksand', sans-serif;
+
+            }
+        }
+
+`;
+
+const JobDescriptionHolder = styled.div`
+
+
+ul{
+
+    li{
+        list-style:none;
+       padding:0 2rem 1rem 0;
+       font-size:0.8rem;
+       color:gray;
+       font-family: 'Quicksand', sans-serif;
+    }
+}
+`;
+
+const TrainingHolder = styled.div`
+
+h2{
+    padding-left:2rem;
+
+}
+    p{
+        padding-left:2.2rem;
+        color:gray;
+        font-size:0.8rem;
+        font-family: 'Quicksand', sans-serif;
+
+
+    }
+`;
+
+
+
+const Profession = styled.div`
+        padding-left:2rem;
+        border-bottom:2px solid green;
+        max-width:100%;
+        display:flex;
+        flex-direction:column;
+        text-align:center;
+        padding:2rem;
+
+
+
+
+        h2{
+            font-size:1.5rem;
+            font-family: 'Quicksand', sans-serif;
+            color:#1976d2;
+
+        }
+
+        p{
+            font-size:0.8rem;
+            color:'light-gray';
+            font-family: 'Quicksand', sans-serif;
+
+
+        }
+`;
+
+
+const Objective = styled.div`
+
+padding:2rem;
+
+
+h2{
+    font-size:1.5rem;
+    font-family: 'Quicksand', sans-serif;
+    color:#1976d2;
+
+
+}
+
+p{
+    font-size:0.8rem;
+    color:gray;
+    font-family: 'Quicksand', sans-serif;
+
+
+}
 `;
 
 
