@@ -24,7 +24,7 @@ const Resume = () => {
                     <InnerResumeMenu>
                         <ul>
                             <li><FaLinkedin style={{ color:'#1976d2', cursor:'pointer'}}/></li>
-                            <li style={{ width:'100%',display:'flex', width:'100px',  justifyContent:'space-around', alignItems:'center'}}><FaDownload  style={{ color:'#1976d2',  cursor:'pointer'}} /><ButtonCv label="Download" openMyCv={pdf} /></li>
+                            <li style={{ display:'flex', width:'100px',  justifyContent:'space-around', alignItems:'center'}}><FaDownload  style={{ color:'#1976d2',  cursor:'pointer'}} /><ButtonCv label="Download" openMyCv={pdf} /></li>
                         </ul>
                     </InnerResumeMenu>
 

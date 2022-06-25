@@ -104,10 +104,14 @@ const Text = styled.div`
     align-items:center;
     text-align:center;
     justify-content:center;
+    font-family: 'Quicksand', sans-serif;
+
 
     h1{
       font-size:3rem;
     }
+
+   
 `;
 
 
@@ -123,6 +127,8 @@ h2{
   font-size:2em;
   padding:1.3em;
   color:#1976d2;
+  font-family: 'Quicksand', sans-serif;
+
 }
 
 ul{
@@ -159,6 +165,8 @@ const PeakOfMeHolder = styled.div`
     justify-content:center;
     align-items:center;
     background-color:#1976d2;
+    font-family: 'Quicksand', sans-serif;
+
 `;
 
 
