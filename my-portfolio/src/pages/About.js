@@ -17,7 +17,7 @@ const About = () => {
             <TopContent>
                 <Text>
                       <h1>I'am Afarait Sulaimon Bola <br/> Software developer and Product Manager</h1>
-                      <p>Like to make product useful for usage and i love to always 
+                      <p>Like to make product useful for usage, i love to always 
                         make product attractive to users and then love to keep them with the user experience.
                          All i care for in a product is to see the users come back with a great and lovely experience.</p>
 
