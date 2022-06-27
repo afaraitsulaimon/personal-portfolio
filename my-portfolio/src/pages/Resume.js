@@ -85,6 +85,7 @@ const Resume = () => {
                         </ResumeLeftDiv>
 
                         <ResumeRightDiv>
+                            <ForMediaAdjustMent>
                         <h1  style={{ color:'#1976d2', paddingLeft:'2rem', fontSize:'2.5rem',fontFamily: "'Kdam Thmor Pro', sans-serif" }}>Afarait<br/> Sulaimon B.</h1>
 
                                 <Profession>
@@ -98,7 +99,7 @@ const Resume = () => {
                                         
                                         </p>
                                 </Profession>
-                               
+                                </ForMediaAdjustMent>
                                 <Objective>
                                 <h2>Objective</h2>
                                      <p>
@@ -344,6 +345,7 @@ const ResumeLeftDiv = styled.div`
             display:grid;
             align-items:center;
             text-align:center;
+            position:relative;
     
     
         }
@@ -377,7 +379,15 @@ const DataHolder = styled.div`
 
                     }
 
-                    
+                    @media(max-width:475px){
+                        position:absolute;
+                        top:120px;
+                       display:flex;
+                       flex-direction:column;
+                       width:100%;
+                     
+                
+                    } 
          
 `;
 
@@ -424,6 +434,11 @@ const CoreTechHolder = styled.ul`
             font-size:0.8em;
             font-family: 'Quicksand', sans-serif;
         }
+
+        @media(max-width:475px){
+            margin-top:520px;
+    
+        } 
 `;
 
 const SkillsHolder = styled.ul`
@@ -454,7 +469,28 @@ const ResumeRightDiv = styled.div`
             font-size:0.9em;
         }
 
-       
+       @media(max-width:475px){
+        width:100%;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+        text-align:center;
+        position:relative;
+
+
+    }
+`;
+
+
+const ForMediaAdjustMent = styled.div`
+
+        @media(max-width:475px){
+          
+            position:absolute;
+            top:-1150px;
+    
+        }
 `;
 
 const JobExpHolder = styled.div`
@@ -521,7 +557,7 @@ h2{
 
 const Profession = styled.div`
         padding-left:2rem;
-        border-bottom:2px solid green;
+        border-bottom:2px solid #1976d2;
         max-width:100%;
         display:flex;
         flex-direction:column;
