@@ -49,7 +49,7 @@ const Resume = () => {
                                     <li>Javascript</li>
                                     <li>PHP</li>
                                     <li>ReactJs</li>
-                                    <li>NodeJs</li>
+                                    <li>Python</li>
                                     <li>React-Native</li>
                                     <li>Bootstrap</li>
                                     <li>Tailwind</li>
