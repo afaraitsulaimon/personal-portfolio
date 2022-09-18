@@ -5,6 +5,7 @@ import Footer from '../components/Footer'
 import {motion} from 'framer-motion'
 
 import {portfolioDetails} from './PortfolioDetails'
+import ButtonOpeningProject from '../components/ButtonProjectPage'
 
 
 const Portfolio = () => {
@@ -22,14 +23,13 @@ const Portfolio = () => {
       
         <ProjectHeader>
             <h1>
-            Project Done
+            Projects Done
             </h1>
             <TinyLine >
 
             </TinyLine>
         </ProjectHeader>
 
-{/* Right Project holder start from here */}
 
 {portfolioDetails.map((porty) => {
 
@@ -49,7 +49,8 @@ if (porty.id % 2 !== 0) {
 
               <ProjectMoreDetailsRight>
                 <span>Tools: {porty.toolsUsed}</span>
-                <p>{porty.link}</p>
+                <ButtonOpeningProject theLink={porty.link} label={porty.link}  />
+                <ButtonOpeningProject theLink={porty.github} label='Github' />
               </ProjectMoreDetailsRight>
             </ProjectContentRight>
           </ProjectListRight>
@@ -68,7 +69,8 @@ if (porty.id % 2 !== 0) {
 
             <ProjectMoreDetailsLeft>
                 <span>Tools: {porty.toolsUsed}</span>
-                <p>{porty.link}</p>
+                <ButtonOpeningProject theLink={porty.link} label={porty.link}  />
+                <ButtonOpeningProject theLink={porty.github} label='Github' />
             </ProjectMoreDetailsLeft>
             </ProjectContentLeft>
 
@@ -110,7 +112,6 @@ if (porty.id % 2 !== 0) {
 const Container = styled.div`
     width:100%;
     min-height:100vh;
-    background-color:#f9f9f9;
 
 `;
 
@@ -152,9 +153,12 @@ const ProjectListRight = styled.div`
 
     width:90%;
     height:70vh;
-    background-color:green;
     display:flex;
     position:relative;
+    margin-top:20px;
+    margin-bottom:20px;
+    border:2px solid #1976d2;
+    border-radius:3px;
 
    
 
@@ -164,7 +168,13 @@ const ProjectImageRight = styled.div`
 
     width:50%;
     height:100%;
-    background-color:red;
+    
+    img{
+        width:100%;
+        height:100%;
+        object-fit:cover;
+
+    }
    
 
 `;
@@ -173,7 +183,6 @@ const ProjectContentRight = styled.div`
 
     width:50%;
     height:100%;
-    background-color:yellow;
 
    
 
@@ -182,11 +191,12 @@ const ProjectContentRight = styled.div`
 const ProjectDescriptionRight = styled.div`
     width:50%;
     height:30%;
-    background-color:green;
+    background-color:rgba(25,118,210,0.6);
    position:absolute;
     top:40%;
     right:150px;
     border-radius:5px;
+  
 
     @media(max-width:768px){
 
@@ -221,9 +231,11 @@ const ProjectListLeft = styled.div`
 
     width:90%;
     height:70vh;
-    background-color:green;
     display:flex;
     position:relative;
+    border:2px solid #1976d2;
+    border-radius:3px;
+
 
    
 
@@ -233,8 +245,14 @@ const ProjectImageLeft = styled.div`
 
     width:50%;
     height:100%;
-    background-color:brown;
    
+    img{
+        width:100%;
+        height:100%;
+        object-fit:cover;
+    }
+   
+
 
 `;
 
@@ -250,7 +268,7 @@ const ProjectContentLeft = styled.div`
 const ProjectDescriptionLeft = styled.div`
     width:50%;
     height:30%;
-    background-color:green;
+    background-color:rgba(25,118,210,0.6);
    position:absolute;
    top:40%;
    left:150px;

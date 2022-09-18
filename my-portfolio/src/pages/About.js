@@ -3,7 +3,7 @@ import Menu from '../components/Menu'
 import styled from 'styled-components';
 import Footer from '../components/Footer'
 import {motion} from 'framer-motion'
-import {FaGithub,FaHtml5, FaJs, FaCss3, FaFigma, FaReact, FaPhp, FaBootstrap, FaJira, FaNodeJs} from "react-icons/fa";
+import {FaGithub,FaHtml5, FaJs, FaCss3, FaFigma, FaReact, FaPhp, FaBootstrap, FaJira, FaPython} from "react-icons/fa";
 import { SiMiro, SiStyledcomponents, SiTailwindcss, SiMaterialui, SiProducthunt} from "react-icons/si";
 
 const About = () => {
@@ -47,12 +47,12 @@ const About = () => {
                             <li><span><SiMiro/></span>Miro</li>
                             <li><span><FaFigma/></span>Figma</li>
                             <li><span><FaJira/></span>Jira</li>
-                            <li><span><FaNodeJs/></span>Node js</li>
+                            <li><span><FaPython/></span>Python</li>
 
 
 
                           </ul>
-                          <p style={{ textAlign:'center', fontSize:'1.2em', color:'blue' }}>Trying to improve my skill set on React, React Native and Nodejs</p>
+                          <p style={{ textAlign:'center', fontSize:'1.2em', color:'blue' }}>Trying to improve my skill set on React, React Native and Python/Django</p>
                 </UsingTools>
 
 
